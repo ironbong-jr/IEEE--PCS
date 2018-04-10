@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="contact.css">
+
+<style media="screen">
+.land{
+  height: 100vh;
+  width: 100%;
+  background: #0177D7;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid blue;
+  color: black;
+  transition: 0.3s ease;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+input:focus{
+  background-color: white;
+  transition: 0.5s ease;
+  border: none;
+}
+input:focus::-webkit-input-placeholder{
+  color: blue;
+}
+input:active{
+  border: none;
+}
+input.btn{
+  background: blue;
+}
+textarea::-webkit-input-placeholder{
+  color: blue;
+}
+
+</style>
+
+  </head>
+  <body>
+    <div class="land">
+      <h1>Wanna Join us or work with us?</h1>
+      <form class="" action="index.html" method="post">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <input type="text" name="name" value="" placeholder="name"><br><br>
+              <input type="text" name="num" value="" placeholder="number"><br><br>
+              <input type="text" name="mail" value="" placeholder="e-mail"><br><br>
+            </div>
+            <div class="col">
+                <textarea name="name" rows="8" cols="50" placeholder="message"></textarea><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input class="btn" type="submit" name="" value="submit" placeholder="submit">
+            </div>
+          </div>
+
+
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
